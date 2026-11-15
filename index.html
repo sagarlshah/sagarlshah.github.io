@@ -8,8 +8,28 @@
   <meta name="author" content="Sagar Lalchand Shah" />
   <link rel="canonical" href="https://sagarlshah.github.io/" />
 
+  <!-- FAVICONS & APP ICONS -->
+  <link rel="icon" href="/favicon.ico" sizes="any" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+  <meta name="theme-color" content="#0f172a" />
+
+  <!-- OPEN GRAPH / SOCIAL PREVIEW -->
+  <meta property="og:type" content="profile" />
+  <meta property="og:title" content="Sagar Lalchand Shah (Sagar Shah) | Founder & CEO at SaNiSa Solutions" />
+  <meta property="og:description" content="Official profile of Sagar Lalchand Shah (Sagar Shah / Sagar L Shah), Founder and CEO of SaNiSa Solutions, former Vice President at J.P. Morgan & Chase, technologist, and international competitive robotics mentor in Pune, India." />
+  <meta property="og:url" content="https://sagarlshah.github.io/" />
+  <meta property="og:image" content="https://sagarlshah.github.io/social/social-preview-1200x630.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Sagar Lalchand Shah (Sagar Shah) | Founder & CEO at SaNiSa Solutions" />
+  <meta name="twitter:description" content="Founder & CEO at SaNiSa Solutions, Technologist, and Competitive Robotics Mentor in Pune, India." />
+  <meta name="twitter:image" content="https://sagarlshah.github.io/social/social-preview-1200x630.png" />
+
   <!-- PASTE GOOGLE SEARCH CONSOLE VERIFICATION TAG HERE -->
-  <meta name="google-site-verification" content="gE4CjVggXrljc9aJkON1DFEx0OWDqebexrSpQUfLyRE" />
+  <meta name="google-site-verification" content="PASTE_YOUR_GOOGLE_VERIFICATION_CODE_HERE" />
 
   <script type="application/ld+json">
   {
@@ -29,7 +49,8 @@
       "@type": "Organization",
       "@id": "https://www.sanisasolutions.com/#organization",
       "name": "SaNiSa Solutions",
-      "url": "https://www.sanisasolutions.com/"
+      "url": "https://www.sanisasolutions.com/",
+      "logo": "https://sagarlshah.github.io/logo/s-infinity-logo-transparent-1024.png"
     },
     "homeLocation": [
       { "@type": "Place", "name": "Pune, Maharashtra, India" },
@@ -108,10 +129,35 @@
       border-bottom: 1px solid var(--border);
       margin-bottom: 2rem;
     }
+    .header-top {
+      display: flex;
+      align-items: center;
+      gap: 1.25rem;
+    }
+    .brand-logo-link {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+    .brand-logo {
+      width: 68px;
+      height: 68px;
+      object-fit: contain;
+      border-radius: 12px;
+      background: var(--card);
+      border: 1px solid var(--border);
+      padding: 0.45rem;
+      transition: border-color 0.2s ease, transform 0.2s ease;
+    }
+    .brand-logo:hover {
+      border-color: var(--accent);
+      transform: translateY(-1px);
+    }
     h1 { font-size: 2rem; line-height: 1.2; margin-bottom: 0.35rem; }
     .subtitle { color: var(--accent); font-weight: 600; font-size: 1.05rem; }
     .meta { color: var(--muted); font-size: 0.95rem; margin-top: 0.35rem; }
-    .links { margin-top: 1rem; display: flex; gap: 0.75rem; flex-wrap: wrap; }
+    .links { margin-top: 1.15rem; display: flex; gap: 0.75rem; flex-wrap: wrap; }
     .btn {
       display: inline-block;
       background: var(--card);
@@ -141,20 +187,57 @@
     .card a { color: var(--accent); text-decoration: none; }
     .card a:hover { text-decoration: underline; }
     footer {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.6rem;
+      flex-wrap: wrap;
       text-align: center;
       color: var(--muted);
       font-size: 0.85rem;
       padding-top: 1.5rem;
       border-top: 1px solid var(--border);
     }
+    .footer-logo {
+      width: 22px;
+      height: 22px;
+      object-fit: contain;
+      vertical-align: middle;
+    }
+    @media (max-width: 560px) {
+      .header-top {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.85rem;
+      }
+      .brand-logo {
+        width: 56px;
+        height: 56px;
+      }
+      h1 { font-size: 1.65rem; }
+    }
   </style>
 </head>
 <body>
   <div class="container">
     <header>
-      <h1>Sagar Lalchand Shah <span style="font-weight:400; color:var(--muted); font-size:1.15rem;">(Sagar Shah / Sagar L Shah)</span></h1>
-      <div class="subtitle">Founder &amp; CEO at SaNiSa Solutions • Technologist • Competitive Robotics Mentor</div>
-      <div class="meta">Pune &amp; Mumbai, Maharashtra, India</div>
+      <div class="header-top">
+        <a href="https://sagarlshah.github.io/" class="brand-logo-link" aria-label="Sagar Lalchand Shah Home">
+          <img
+            src="/logo/s-infinity-logo.svg"
+            onerror="this.onerror=null; this.src='/logo/s-infinity-logo-transparent.png';"
+            alt="Sagar Lalchand Shah S-Infinity Logo"
+            class="brand-logo"
+            width="68"
+            height="68"
+          />
+        </a>
+        <div>
+          <h1>Sagar Lalchand Shah <span style="font-weight:400; color:var(--muted); font-size:1.15rem;">(Sagar Shah / Sagar L Shah)</span></h1>
+          <div class="subtitle">Founder &amp; CEO at SaNiSa Solutions • Technologist • Competitive Robotics Mentor</div>
+          <div class="meta">Pune &amp; Mumbai, Maharashtra, India</div>
+        </div>
+      </div>
       <div class="links">
         <a class="btn" href="https://www.sanisasolutions.com/team/sagar/" rel="me">SaNiSa Solutions Profile</a>
         <a class="btn" href="https://github.com/sagarlshah" rel="me">GitHub (@sagarlshah)</a>
@@ -187,7 +270,8 @@
     </section>
 
     <footer>
-      &copy; 2026 Sagar Lalchand Shah (Sagar Shah) • <a href="https://www.sanisasolutions.com/team/sagar/" style="color:var(--accent);">sanisasolutions.com/team/sagar</a>
+      <img src="/logo/s-infinity-logo.svg" alt="" class="footer-logo" width="22" height="22" />
+      <span>&copy; 2026 Sagar Lalchand Shah (Sagar Shah) • <a href="https://www.sanisasolutions.com/team/sagar/" style="color:var(--accent);">sanisasolutions.com/team/sagar</a></span>
     </footer>
   </div>
 </body>
